@@ -1,9 +1,12 @@
 <div align="center">
 
   <img src="assets/logo.PNG" width="200" height="auto" />
-  <h1>Awesome Readme Template</h1>
+  <h1>MoonDrift</h1>
   
-   
+<h2> ❗❗ This project is not an official project but rather a personal practice project. I am a beginner, and this is my first independent project.
+
+Please keep in mind that the code may contain mistakes or inefficiencies. Any feedback or suggestions are welcome! Feel free to contact me at discord: pinterest_whore.❗❗ </h2>
+<h3> Moondrift is an aesthetic sleep tracker with inspiration form various tracker apps </h3>
 <h4>
   <span> ｡ﾟ•┈୨♡୧┈• ｡ﾟ </span>
     <a href="https://www.figma.com/design/M0yc7Kkk6JP0RJpe0eG7eY/Sleeptracker?node-id=0-1&p=f&t=dgK9Z8hfwf4DftJ1-0"> View Project</a>
@@ -47,7 +50,12 @@
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+  <img src="assets/startscreen.PNG" width="200" height="auto" />
+  <img src="assets/homescreen.PNG" width="200" height="auto" />
+  <img src="assets/stats.PNG" width="200" height="auto" />
+  <img src="assets/explore.PNG" width="200" height="auto" />
+  <img src="assets/profile.PNG" width="200" height="auto" />
+  <img src="assets/settings.PNG" width="200" height="auto" />
 </div>
 
 
