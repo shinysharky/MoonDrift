@@ -37,7 +37,7 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
   
 
 <!-- About the Project -->
-## :star2: About the Project
+## :tea: About the Project
 
 
 <!-- Screenshots -->
@@ -54,7 +54,7 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 
 
 <!-- TechStack -->
-### :space_invader: Tech Stack
+### :rice_ball: Tech Stack
 
 <details>
   <summary>Framework</summary>
@@ -68,7 +68,7 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 
 
 <!-- Features -->
-### :dart: Features
+### :fish_cake: Features
 
 - track your sleep
 - set alarms for going to sleep and waking up
@@ -93,7 +93,7 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 
 <!-- Getting Started -->
 <!-- Code Overview -->
-## 	:toolbox: Variables
+## 	:snail: Variables
 | Variable             | Usage                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | xxx |  xxx |
@@ -103,18 +103,18 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 | xxx |  xxx |
 | xxx |  xxx |
 <!-- Usage -->
-## :eyes: Usage
+## :leaves: Usage
 This section will tell you more about the usage of importent functions and other stuff I dont know yet hehe
 
 <!-- Roadmap -->
-## :compass: Roadmap
+## :bug: Roadmap
 
 * [ ] create Thememanager
 * [ ] make main
 
 
 <!-- Contributing -->
-## :wave: Contributing
+## :rice: Contributing
 
 <a href="https://github.com/shinysharky">
   <img src="assets/pfp.png" width="100" height="100" />
@@ -124,7 +124,7 @@ I am open to new people working on this project, find my contact information in 
 
 
 <!-- FAQ -->
-## :grey_question: FAQ
+## :bamboo: FAQ
 
 - meow
   + wau
@@ -134,7 +134,7 @@ I am open to new people working on this project, find my contact information in 
 
 
 <!-- License -->
-## :warning: Note
+## :alien: Note
 Please remember this is no real application, I do not get payed for this.
 This porject only exists for the purpose of learning and trying out new things. 
 I don't have much knowladge regarding coding, pls remember this looking at the code.
@@ -142,7 +142,7 @@ I don't have much knowladge regarding coding, pls remember this looking at the c
 Please don't steal my design, I made it myself using Figma, with help of open assets and liberies.
 
 <!-- Contact -->
-## :handshake: Contact
+## :frog: Contact
 
 [my website]( https://frostyblossom.carrd.co/)
 
@@ -150,7 +150,7 @@ Please don't steal my design, I made it myself using Figma, with help of open as
 
 
 <!-- Acknowledgments -->
-## :gem: Acknowledgements
+## :dragon: Acknowledgements
 
 nothing here yet.
 
