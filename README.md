@@ -5,7 +5,7 @@
   
 <h2> ❗❗ This project is not an official project but rather a personal practice project. I am a beginner, and this is my first independent project.
 
-Please keep in mind that the code may contain mistakes or inefficiencies. Any feedback or suggestions are welcome! Feel free to contact me at discord: pinterest_whore.❗❗ </h2>
+Please keep in mind that the code may contain mistakes or inefficiencies. Any feedback or suggestions are welcome! Feel free to contact me with the options down below ❗❗ </h2>
 <h3> Moondrift is an aesthetic sleep tracker with inspiration form various tracker apps </h3>
 <h4>
   <span> ｡ﾟ•┈୨♡୧┈• ｡ﾟ </span>
