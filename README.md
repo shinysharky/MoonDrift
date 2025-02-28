@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="assets/logo.PNG" width="200" height="auto" />
+  <img src="assets/Logo.png" width="200" height="auto" />
   <h1>MoonDrift</h1>
   
 <h2> ❗❗ This project is not an official project but rather a personal practice project. I am a beginner, and this is my first independent project.
@@ -17,28 +17,27 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 <span>⋅───⊱༺ ♰ ༻⊰───⋅</span>
 <!-- Table of Contents -->
 <div align="left">
-# :notebook_with_decorative_cover: Table of Contents
+ :notebook_with_decorative_cover: Table of Contents
 
-- [About the Project](#star2-about-the-project)
-  * [Screenshots](#camera-screenshots)
-  * [Tech Stack](#space_invader-tech-stack)
-  * [Features](#dart-features)
-  * [Color Reference](#art-color-reference)
-  * [Environment Variables](#key-environment-variables)
-- [Getting Started](#toolbox-getting-started)
-  * [Prerequisites](#bangbang-prerequisites)
-  * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
-- [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
-  * [Code of Conduct](#scroll-code-of-conduct)
-- [FAQ](#grey_question-faq)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
+- About the Project
+  * Screenshots
+  * Tech Stack
+  * Features
+  * Color Reference
+- Code
+  * Variables
+  * Installation
+  * Running Tests
+  * Run Locally
+  * Deployment
+- Usage
+- Roadmap
+- Contributing
+  * Code of Conduct
+- FAQ
+- License
+- Contact
+- Acknowledgements
 
   
 
@@ -109,99 +108,41 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 <!-- Features -->
 ### :dart: Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- track your sleep
+- set alarms for going to sleep and waking up
+- listen to asmr and other relaxing sounds
+- learn more about your sleep-personality
 
 <!-- Color Reference -->
 ### :art: Color Reference
-
+<span>⋅───⊱༺ all colors and themes will be in the Thememanager ༻⊰───⋅</span>
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
+| Background Color | <img src="assets/color5.PNG" width="20" height="20" /> #092139 |
+| Secondary Color | <img src="assets/color4.PNG" width="20" height="20" /> #113953 |
+| Accent Color | <img src="assets/color3.PNG" width="20" height="20" /> #104040 |
+| Highlight Color | <img src="assets/color2.PNG" width="20" height="20" /> #16635B |
+| Icon Color | <img src="assets/color1.PNG" width="20" height="20" /> #80C4EB |
+| Header Color | <img src="assets/headercolor.PNG" width="20" height="20" /> #69AAF1 |
+| Text Color | <img src="assets/textcolor2.PNG" width="20" height="20" /> #FFFFF |
+| Text Color | <img src="assets/textcolor1.PNG" width="20" height="20" /> #D4D4D4 |
 
 
-<!-- Env Variables -->
-### :key: Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
 
 <!-- Getting Started -->
-## 	:toolbox: Getting Started
-
-<!-- Prerequisites -->
-### :bangbang: Prerequisites
-
-This project uses Yarn as package manager
-
-```bash
- npm install --global yarn
-```
-
-<!-- Installation -->
-### :gear: Installation
-
-Install my-project with npm
-
-```bash
-  yarn install my-project
-  cd my-project
-```
-   
-<!-- Running Tests -->
-### :test_tube: Running Tests
-
-To run tests, run the following command
-
-```bash
-  yarn test test
-```
-
-<!-- Run Locally -->
-### :running: Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/Louis3797/awesome-readme-template.git
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  yarn install
-```
-
-Start the server
-
-```bash
-  yarn start
-```
-
-
-<!-- Deployment -->
-### :triangular_flag_on_post: Deployment
-
-To deploy this project run
-
-```bash
-  yarn deploy
-```
-
-
+meow
+<!-- Code Overview -->
+## 	:toolbox: Variables
+| Variable             | Usage                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| xxx |  xxx |
+| Secondary Color | <img src="assets/color4.PNG" width="20" height="20" /> #113953 |
+| Accent Color | <img src="assets/color3.PNG" width="20" height="20" /> #104040 |
+| Highlight Color | <img src="assets/color2.PNG" width="20" height="20" /> #16635B |
+| Icon Color | <img src="assets/color1.PNG" width="20" height="20" /> #80C4EB |
+| Header Color | <img src="assets/headercolor.PNG" width="20" height="20" /> #69AAF1 |
+| Text Color | <img src="assets/textcolor2.PNG" width="20" height="20" /> #FFFFF |
+| Text Color | <img src="assets/textcolor1.PNG" width="20" height="20" /> #D4D4D4 |
 <!-- Usage -->
 ## :eyes: Usage
 
