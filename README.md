@@ -26,16 +26,11 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
   * Color Reference
 - Code
   * Variables
-  * Installation
-  * Running Tests
-  * Run Locally
-  * Deployment
 - Usage
 - Roadmap
 - Contributing
-  * Code of Conduct
 - FAQ
-- License
+- Note
 - Contact
 - Acknowledgements
 
@@ -62,7 +57,7 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 ### :space_invader: Tech Stack
 
 <details>
-  <summary>Client</summary>
+  <summary>Framework</summary>
   <ul>
     <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
     <li><a href="https://nextjs.org/">Next.js</a></li>
@@ -71,39 +66,6 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 ### :dart: Features
@@ -130,88 +92,67 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 
 
 <!-- Getting Started -->
-meow
 <!-- Code Overview -->
 ## 	:toolbox: Variables
 | Variable             | Usage                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | xxx |  xxx |
-| Secondary Color | <img src="assets/color4.PNG" width="20" height="20" /> #113953 |
-| Accent Color | <img src="assets/color3.PNG" width="20" height="20" /> #104040 |
-| Highlight Color | <img src="assets/color2.PNG" width="20" height="20" /> #16635B |
-| Icon Color | <img src="assets/color1.PNG" width="20" height="20" /> #80C4EB |
-| Header Color | <img src="assets/headercolor.PNG" width="20" height="20" /> #69AAF1 |
-| Text Color | <img src="assets/textcolor2.PNG" width="20" height="20" /> #FFFFF |
-| Text Color | <img src="assets/textcolor1.PNG" width="20" height="20" /> #D4D4D4 |
+| xxx |  xxx |
+| xxx |  xxx |
+| xxx |  xxx |
+| xxx |  xxx |
+| xxx |  xxx |
 <!-- Usage -->
 ## :eyes: Usage
-
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
-
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
+This section will tell you more about the usage of importent functions and other stuff I dont know yet hehe
 
 <!-- Roadmap -->
 ## :compass: Roadmap
 
-* [x] Todo 1
-* [ ] Todo 2
+* [ ] create Thememanager
+* [ ] make main
 
 
 <!-- Contributing -->
 ## :wave: Contributing
 
-<a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
+<a href="https://github.com/shinysharky">
+  <img src="assets/pfp.png" width="100" height="100" />
 </a>
 
+I am open to new people working on this project, find my contact information in "Contact" :)
 
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-
-<!-- Code of Conduct -->
-### :scroll: Code of Conduct
-
-Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
 
 <!-- FAQ -->
 ## :grey_question: FAQ
 
-- Question 1
+- meow
+  + wau
 
-  + Answer 1
-
-- Question 2
-
-  + Answer 2
+- woof
+  + wau
 
 
 <!-- License -->
-## :warning: License
+## :warning: Note
+Please remember this is no real application, I do not get payed for this.
+This porject only exists for the purpose of learning and trying out new things. 
+I don't have much knowladge regarding coding, pls remember this looking at the code.
 
-Distributed under the no License. See LICENSE.txt for more information.
-
+Please don't steal my design, I made it myself using Figma, with help of open assets and liberies.
 
 <!-- Contact -->
 ## :handshake: Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+[my website]( https://frostyblossom.carrd.co/)
 
-Project Link: [https://github.com/Louis3797/awesome-readme-template](https://github.com/Louis3797/awesome-readme-template)
+[discord](https://discord.gg/cb88aVYR)
 
 
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements
 
-Use this section to mention useful resources and libraries that you have used in your projects.
+nothing here yet.
 
  - [Shields.io](https://shields.io/)
  - [Awesome README](https://github.com/matiassingers/awesome-readme)
