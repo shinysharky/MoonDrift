@@ -1,0 +1,97 @@
+/* Style.css */
+#moondrift_header {                                                                                                     /*Usage: Home, Stats, Profile*/
+    color: #69AAF1;
+    font-family: 'Figtree', sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+#moondrift_h1 {                                                                                                         /*Usage: Home, Stats, Explore, Profile*/
+    color: #B8D5E5;
+    font-family: 'Figtree', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Home */
+#home_buttons {
+    background-color: #16635B;
+    color: #FFFFFF;
+    font-family: 'Figtree', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Statistics */
+#stats_diagram_text_stats {
+    color: #FFFFFF;
+    font-family: 'Figtree', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 15px;
+}
+
+#stats_diagram_text_date {
+    color: #FFFFFF;
+    font-family: 'Figtree', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+/* Explore */
+#explore_sound_text {
+    color: #FFFFFF;
+    font-family: 'Figtree', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#explore_artist_text {
+    color: #88939E;
+    font-family: 'Figtree', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* Profile */
+#profile_text_description {
+    color: #D4D4D4;
+    font-family: 'Alef', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+/* Settings */
+#settings_header {                                                                                                      /*Usage: "Settings", "Profile", "Notification", "Other" */
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#settings_h1 {                                                                                                          /*Usage: “Name”, “Date of Birth”, “Email”, “Sleep Personality”, “Password”*/
+    color: #B8D5E5;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#settings_text {                                                                                                        /*Usage: “Notifications”, “Updates”, “Language”, “TOS”, “Privacy Policy”, Subscription Terms”*/
+    color: #B8D5E5;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#settings_fillout_text {                                                                                                /*Usage: Fillout under "Profile"*/
+    color: #6F7B89;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#settings_button_text {                                                                                                 /*Usage: “Add or switch accounts”, “Log out”, “Delete Account”*/
+    color: #80C4EB;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
