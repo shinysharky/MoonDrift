@@ -50,17 +50,26 @@ class MoonDrift(QtWidgets.QWidget):
         button_layout = QtWidgets.QHBoxLayout()  # Create a horizontal layout for buttons
         button_layout.setSpacing(50)
 
+        layout.addStretch(1)
+
         # Define button click action
+        hello = ["Hallo Welt", "こんにちは世界", "Привет, мир", "Hei maailma", "Hallo wereld", "हैलो वर्ल्ड", "Привіт, світ", "Γεια σου Κόσμο"]
+        button_text = QtWidgets.QLabel("Hello World", alignment=QtCore.Qt.AlignCenter)
+        button_text.setObjectName("explore_sound_text")
+
         @Slot()
         def button_click():
-            print("button clicked")
+            button_text.setText("Hello World")
+
+        def magic(self):
+            button_text.setText(random.choice(hello))
 
         # Create two buttons
         start_sleep = QPushButton("Start Sleep")
         start_sleep.setObjectName("start_sleep")
         start_sleep.setMinimumSize(20, 30)
         start_sleep.setMaximumSize(112, 40)
-        start_sleep.clicked.connect(button_click)
+        start_sleep.clicked.connect(magic)
 
         set_alarm = QPushButton("Set Alarm")
         set_alarm.setObjectName("set_alarm")
@@ -69,11 +78,14 @@ class MoonDrift(QtWidgets.QWidget):
         set_alarm.clicked.connect(button_click)
 
         # Add the buttons to the horizontal layout
+        layout.addWidget(button_text)
         button_layout.addWidget(start_sleep)
         button_layout.addWidget(set_alarm)
 
         # Add the button layout to the main layout
         layout.addLayout(button_layout)
+
+        #layout.addStretch(1)
 
         ##### GIF ####
         self.giflabel = QtWidgets.QLabel(self)
@@ -82,7 +94,7 @@ class MoonDrift(QtWidgets.QWidget):
         self.giflabel.setAlignment(QtCore.Qt.AlignCenter)
 
         # Integrate QMovie to the label and initiate the GIF
-        self.gif = QMovie('C:/Moondrift/assets/test.gif')
+        self.gif = QMovie('C:/Moondrift/assets/Eclipse@1x-0.7s-200px-200px (1).gif')
         self.giflabel.setMovie(self.gif)
         self.gif.start()
         # Add the GIF label to the layout
@@ -97,7 +109,7 @@ class MoonDrift(QtWidgets.QWidget):
         self.loadinggiflabel.setAlignment(QtCore.Qt.AlignCenter)
 
         # Integrate QMovie to the label and initiate the GIF
-        self.loadinggif = QMovie('C:/Moondrift/assets/Eclipse@1x-0.7s-200px-200px (1).gif')
+        self.loadinggif = QMovie('C:/Moondrift/assets/1da3d47bcfe7793ee52cafc73b5c753a.gif')
         self.loadinggiflabel.setMovie(self.loadinggif)
         self.loadinggif.start()
         # Add the GIF label to the layout

@@ -17,7 +17,7 @@ QWidget {
     font-size: 20px;
 }
 
-/* Buttons */
+/* ┌─── ∘° Buttons °∘ ───┐ */
 QPushButton {
     background-color: #092139;
     color: #69AAF1;
@@ -41,7 +41,9 @@ QPushButton:checked {
 }
 */
 
-/* Home */
+/* └─── °∘ Buttons ∘° ───┘ */
+
+/* ༺═────────────═༻ Home ༺═────────────═༻ */
 #home_buttons {
     background-color: #16635B;
     color: #FFFFFF;
@@ -49,6 +51,8 @@ QPushButton:checked {
     font-weight: bold;
     font-size: 16px;
 }
+
+/* ┌─── ∘° Buttons °∘ ───┐ */
 #start_sleep {
     background-color: #113953;
     color: #FFFFFF;
@@ -78,7 +82,9 @@ QPushButton:checked {
     border: 3px solid #3A5A75;
 }
 
-/* Statistics */
+/* └─── °∘ Buttons ∘° ───┘ */
+
+/* ༺═────────────═༻ Statistics ༺═────────────═༻ */
 #stats_diagram_text_stats {
     color: #FFFFFF;
     font-family: 'Figtree', sans-serif;
@@ -93,7 +99,11 @@ QPushButton:checked {
     font-size: 10px;
 }
 
-/* Explore */
+/* ┌─── ∘° Buttons °∘ ───┐ */
+
+/* └─── °∘ Buttons ∘° ───┘ */
+
+/* ༺═────────────═༻ Explore ༺═────────────═༻ */
 #explore_sound_text {
     color: #FFFFFF;
     font-family: 'Figtree', sans-serif;
@@ -108,7 +118,11 @@ QPushButton:checked {
     font-size: 10px;
 }
 
-/* Profile */
+/* ┌─── ∘° Buttons °∘ ───┐ */
+
+/* └─── °∘ Buttons ∘° ───┘ */
+
+/* ༺═────────────═༻ Profile ༺═────────────═༻ */
 #profile_text_description {
     color: #D4D4D4;
     font-family: 'Alef', sans-serif;
@@ -116,7 +130,11 @@ QPushButton:checked {
     font-size: 13px;
 }
 
-/* Settings */
+/* ┌─── ∘° Buttons °∘ ───┐ */
+
+/* └─── °∘ Buttons ∘° ───┘ */
+
+/* ༺═────────────═༻ Settings ༺═────────────═༻ */
 #settings_header {                                                                                                      /*Usage: "Settings", "Profile", "Notification", "Other" */
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
@@ -152,5 +170,6 @@ QPushButton:checked {
     font-size: 16px;
 }
 
+/* ┌─── ∘° Buttons °∘ ───┐ */
 
-
+/* └─── °∘ Buttons ∘° ───┘ */
