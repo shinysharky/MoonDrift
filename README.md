@@ -59,10 +59,8 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 <details>
   <summary>Framework</summary>
   <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+    <li><a href="https://doc.qt.io/qtforpython-6/index.html">Qt for Python</a></li>
+    <li><a href="https://www.w3schools.com/css/">CSS</a></li>
   </ul>
 </details>
 
@@ -123,8 +121,6 @@ This section will tell you more about the usage of importent functions and other
 <a href="https://github.com/shinysharky">
   <img src="assets/readme/pfp.png" width="100" height="100" />
 </a>
-
-I am open to new people working on this project, find my contact information in "Contact" :)
 
 
 <!-- FAQ -->
