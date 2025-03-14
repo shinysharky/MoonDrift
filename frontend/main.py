@@ -6,6 +6,7 @@ from PySide6 import QtCore, QtWidgets, QtGui
 from PySide6.QtGui import QGuiApplication, QMovie
 from PySide6.QtQml import QQmlApplicationEngine
 from PySide6.QtWidgets import QApplication, QLabel, QVBoxLayout, QPushButton, QMainWindow
+from PySide6.QtCore import Slot
 
 
 class MoonDrift(QtWidgets.QWidget):
@@ -16,13 +17,12 @@ class MoonDrift(QtWidgets.QWidget):
         self.setGeometry(0, 0, 612, 1017)
         app_icon = QtGui.QIcon(os.path.abspath('C:/Moondrift/assets/Logo.ico'))
         self.setWindowIcon(app_icon)
-        self.setStyleSheet("background-color: #092139;")
         layout = QtWidgets.QVBoxLayout()
 
         # Disable fullscreen and resizing
         self.setFixedSize(612, 1017)
 
-        # Setze den Abstand zwischen den Widgets auf einen kleinen Wert (z.B. 5)
+        # Set the spacing and margins
         layout.setSpacing(0)
         layout.setContentsMargins(0, 0, 0, 0)
 
@@ -46,6 +46,35 @@ class MoonDrift(QtWidgets.QWidget):
         self.info.setStyleSheet("padding: 0; margin: 5;")
         layout.addWidget(self.info)
 
+        ### Button Layout (Horizontal Layout) ###
+        button_layout = QtWidgets.QHBoxLayout()  # Create a horizontal layout for buttons
+        button_layout.setSpacing(50)
+
+        # Define button click action
+        @Slot()
+        def button_click():
+            print("button clicked")
+
+        # Create two buttons
+        start_sleep = QPushButton("Start Sleep")
+        start_sleep.setObjectName("start_sleep")
+        start_sleep.setMinimumSize(20, 30)
+        start_sleep.setMaximumSize(112, 40)
+        start_sleep.clicked.connect(button_click)
+
+        set_alarm = QPushButton("Set Alarm")
+        set_alarm.setObjectName("set_alarm")
+        set_alarm.setMinimumSize(100, 30)
+        set_alarm.setMaximumSize(112, 40)
+        set_alarm.clicked.connect(button_click)
+
+        # Add the buttons to the horizontal layout
+        button_layout.addWidget(start_sleep)
+        button_layout.addWidget(set_alarm)
+
+        # Add the button layout to the main layout
+        layout.addLayout(button_layout)
+
         ##### GIF ####
         self.giflabel = QtWidgets.QLabel(self)
         self.giflabel.setMinimumSize(QtCore.QSize(500, 500))
@@ -61,7 +90,7 @@ class MoonDrift(QtWidgets.QWidget):
 
         layout.addStretch(1)
 
-        ###Loading Gif ###
+        ### Loading Gif ###
         self.loadinggiflabel = QtWidgets.QLabel(self)
         self.loadinggiflabel.setMinimumSize(QtCore.QSize(200, 200))
         self.loadinggiflabel.setMaximumSize(QtCore.QSize(1000, 1000))
@@ -76,8 +105,10 @@ class MoonDrift(QtWidgets.QWidget):
 
         self.setLayout(layout)
 
+
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
 
     # Stylesheet aus einer Datei laden

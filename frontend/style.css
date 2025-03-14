@@ -1,4 +1,8 @@
 /* Style.css */
+QWidget {
+    background-color: #092139;
+}
+
 #moondrift_header {                                                                                                     /*Usage: Home, Stats, Profile*/
     color: #69AAF1;
     font-family: 'Figtree', sans-serif;
@@ -13,6 +17,30 @@
     font-size: 20px;
 }
 
+/* Buttons */
+QPushButton {
+    background-color: #092139;
+    color: #69AAF1;
+    border: 2px solid #092139;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+/*
+QPushButton:checked {
+    background-color: #3e8e41;
+    border-color: #3e8e41;
+}
+*/
+
 /* Home */
 #home_buttons {
     background-color: #16635B;
@@ -20,6 +48,34 @@
     font-family: 'Figtree', sans-serif;
     font-weight: bold;
     font-size: 16px;
+}
+#start_sleep {
+    background-color: #113953;
+    color: #FFFFFF;
+    padding: 1px;
+    border: 0px solid;
+    font-family: 'Figtree', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+#start_sleep:hover {
+    background-color: #3A5A75;
+}
+
+#set_alarm {
+    background-color: #092139;
+    color: #FFFFFF;
+    border: 3px solid #113953;
+    border-radius: 15px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#set_alarm:hover {
+    border: 3px solid #3A5A75;
 }
 
 /* Statistics */
@@ -95,3 +151,6 @@
     font-weight: 400;
     font-size: 16px;
 }
+
+
+
