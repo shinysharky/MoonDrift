@@ -77,7 +77,7 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 
 <!-- Color Reference -->
 ### :art: Color Reference
-<span>⋅───⊱༺ all colors and themes will be in the Thememanager ༻⊰───⋅</span>
+<span>⋅───⊱༺ for a better overview check out style.css ༻⊰───⋅</span>
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Background Color | <img src="assets/color5.PNG" width="20" height="20" /> #092139 |
@@ -109,8 +109,12 @@ This section will tell you more about the usage of importent functions and other
 <!-- Roadmap -->
 ## :bug: Roadmap
 
-* [ ] create Thememanager
-* [ ] make main
+* [x] create style.css
+* [x] create main (main.py)
+* [x] create overview over different styles (overview.py)
+* [x] add placeholder text, buttons, gif to main
+* [ ] animate loading screen
+* [ ] ....
 
 
 <!-- Contributing -->
