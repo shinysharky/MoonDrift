@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="assets/Logo.png" width="200" height="auto" />
+  <img src="assets/Logo/Logo.png" width="200" height="auto" />
   <h1>MoonDrift</h1>
   
 <h2> ❗❗ This project is not an official project but rather a personal practice project. I am a beginner, and this is my first independent project.
@@ -44,12 +44,12 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="assets/startscreen.PNG" width="200" height="auto" />
-  <img src="assets/homescreen.PNG" width="200" height="auto" />
-  <img src="assets/stats.PNG" width="200" height="auto" />
-  <img src="assets/explore.PNG" width="200" height="auto" />
-  <img src="assets/profile.PNG" width="200" height="auto" />
-  <img src="assets/settings.PNG" width="200" height="auto" />
+  <img src="assets/readme/startscreen.PNG" width="200" height="auto" />
+  <img src="assets/readme/homescreen.PNG" width="200" height="auto" />
+  <img src="assets/readme/stats.PNG" width="200" height="auto" />
+  <img src="assets/readme/explore.PNG" width="200" height="auto" />
+  <img src="assets/readme/profile.PNG" width="200" height="auto" />
+  <img src="assets/readme/settings.PNG" width="200" height="auto" />
 </div>
 
 
@@ -117,7 +117,7 @@ This section will tell you more about the usage of importent functions and other
 ## :rice: Contributing
 
 <a href="https://github.com/shinysharky">
-  <img src="assets/pfp.png" width="100" height="100" />
+  <img src="assets/readme/pfp.png" width="100" height="100" />
 </a>
 
 I am open to new people working on this project, find my contact information in "Contact" :)
