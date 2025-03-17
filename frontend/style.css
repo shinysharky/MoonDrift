@@ -1,5 +1,5 @@
 /* Style.css */
-QWidget {
+QWidget {                                                                                                               /*Usage: Background color*/
     background-color: #092139;
 }
 
@@ -18,7 +18,7 @@ QWidget {
 }
 
 /* ┌─── ∘° Buttons °∘ ───┐ */
-QPushButton {
+QPushButton {                                                                                                           /*Usage: Default Button Design*/
     background-color: #092139;
     color: #69AAF1;
     border: 2px solid #092139;
@@ -44,7 +44,7 @@ QPushButton:checked {
 /* └─── °∘ Buttons ∘° ───┘ */
 
 /* ༺═────────────═༻ Home ༺═────────────═༻ */
-#home_buttons {
+#home_buttons {                                                                                                         /*Usage: Text in Buttons (not used) */
     background-color: #16635B;
     color: #FFFFFF;
     font-family: 'Figtree', sans-serif;
@@ -53,7 +53,7 @@ QPushButton:checked {
 }
 
 /* ┌─── ∘° Buttons °∘ ───┐ */
-#start_sleep {
+#start_sleep {                                                                                                          /*Usage: Button to track sleep*/
     background-color: #113953;
     color: #FFFFFF;
     padding: 1px;
@@ -68,7 +68,7 @@ QPushButton:checked {
     background-color: #3A5A75;
 }
 
-#set_alarm {
+#set_alarm {                                                                                                            /*Usage: Button to set alarm*/
     background-color: #092139;
     color: #FFFFFF;
     border: 3px solid #113953;
@@ -85,14 +85,14 @@ QPushButton:checked {
 /* └─── °∘ Buttons ∘° ───┘ */
 
 /* ༺═────────────═༻ Statistics ༺═────────────═༻ */
-#stats_diagram_text_stats {
+#stats_diagram_text_stats {                                                                                             /*Usage: Text for Time*/
     color: #FFFFFF;
     font-family: 'Figtree', sans-serif;
     font-weight: 600; /* SemiBold */
     font-size: 15px;
 }
 
-#stats_diagram_text_date {
+#stats_diagram_text_date {                                                                                              /*Usage: Text for Date*/
     color: #FFFFFF;
     font-family: 'Figtree', sans-serif;
     font-weight: normal;
@@ -104,14 +104,14 @@ QPushButton:checked {
 /* └─── °∘ Buttons ∘° ───┘ */
 
 /* ༺═────────────═༻ Explore ༺═────────────═༻ */
-#explore_sound_text {
+#explore_sound_text {                                                                                                   /*Usage: Text for Soundname*/
     color: #FFFFFF;
     font-family: 'Figtree', sans-serif;
     font-weight: bold;
     font-size: 13px;
 }
 
-#explore_artist_text {
+#explore_artist_text {                                                                                                  /*Usage: Text for Artistname*/
     color: #88939E;
     font-family: 'Figtree', sans-serif;
     font-weight: bold;
@@ -123,7 +123,7 @@ QPushButton:checked {
 /* └─── °∘ Buttons ∘° ───┘ */
 
 /* ༺═────────────═༻ Profile ༺═────────────═༻ */
-#profile_text_description {
+#profile_text_description {                                                                                             /*Usage: Sleep Personality Description*/
     color: #D4D4D4;
     font-family: 'Alef', sans-serif;
     font-weight: normal;
