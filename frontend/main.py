@@ -48,7 +48,7 @@ class Loadingpage(QtWidgets.QWidget):
         layout.addStretch(1)
 
         ##### Timer Label (Countdown) #####
-        self.timer_label = QtWidgets.QLabel("Loading...15 seconds", self)
+        self.timer_label = QtWidgets.QLabel("Loading...5 seconds", self)
         self.timer_label.setObjectName("settings_fillout_text")
         self.timer_label.setAlignment(QtCore.Qt.AlignCenter)
         layout.addWidget(self.timer_label)
@@ -56,10 +56,10 @@ class Loadingpage(QtWidgets.QWidget):
         self.setLayout(layout)
 
         ##### Timer für den Countdown #####
-        self.remaining_time = 5  # 15 Sekunden Countdown
+        self.remaining_time = 5
         self.timer = QtCore.QTimer(self)
         self.timer.timeout.connect(self.update_timer)
-        self.timer.start(1000)  # Jede Sekunde aktualisieren
+        self.timer.start(1000)
 
     def update_timer(self):
         """ Aktualisiert das Timer-Label jede Sekunde """
@@ -70,11 +70,11 @@ class Loadingpage(QtWidgets.QWidget):
             self.switch_to_next_page()
 
     def switch_to_next_page(self):
-        """ Stoppt den Timer und wechselt zur nächsten Seite """
-        self.timer.stop()  # Timer stoppen
-        self.next_page = Homepage()  # Neue Seite instanziieren
-        self.next_page.show()  # Neue Seite anzeigen
-        self.close()  # Aktuelle Seite schließen
+        """ stopps timer and opens next page """
+        self.timer.stop()  # Timer stop
+        self.next_page = Homepage()  # new page
+        self.next_page.show()  # new page open
+        self.close()  # close previouse page
 
 
 if __name__ == "__main__":
