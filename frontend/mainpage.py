@@ -1,8 +1,10 @@
+import sys
+
 from PySide6 import QtCore, QtWidgets, QtGui
 from PySide6.QtGui import QGuiApplication, QMovie, QPainter, QLinearGradient, QColor, QFont, QBrush, QPainterPath
 from PySide6.QtQml import QQmlApplicationEngine
 from PySide6.QtWidgets import QApplication, QLabel, QVBoxLayout, QPushButton, QMainWindow
-from PySide6.QtCore import Slot, QTimer, QTime, QDate
+from PySide6.QtCore import Slot, QTimer, QTime, QDate, QRect
 import os
 
 
@@ -13,62 +15,54 @@ class Homepage(QtWidgets.QWidget):
         self.setGeometry(0, 0, 612, 1000)
         app_icon = QtGui.QIcon(os.path.abspath('C:/Moondrift/assets/Logo/Logo.ico'))
         self.setWindowIcon(app_icon)
-        layout = QtWidgets.QVBoxLayout()
-        layout.setContentsMargins(0, 0, 0, 0)
-        layout.addStretch(1)
 
-        # Disable fullscreen and resizing
+        layout = QtWidgets.QVBoxLayout(self)
+        layout.setContentsMargins(0, 0, 0, 0)
+
+        #  Fix Windowsize
         self.setFixedSize(612, 1000)
 
-        # Create a QTimer that updates the time every second
+        # **GREETING LABEL**
+        #### def for different greetings based on time ###
+        self.hello_label = QtWidgets.QLabel(self)
+        self.hello_label.setText("Good Morning")
+        self.hello_label.setObjectName("moondrift_header")
+
+
+        # **TIME LABEL **
+        self.time_label = QtWidgets.QLabel(self)
+        self.time_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.time_label.setFont(QFont("Arial", 74, QFont.Bold))
+        self.time_label.setStyleSheet("color: #16635B;")
+
+        # **DATE LABEL **
+        self.date_label = QtWidgets.QLabel(self)
+        self.date_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.date_label.setObjectName("moondrift_h1")
+        self.date_label.setGeometry(QRect(0, 0, 0, 0))
+
+        # **Labels Layout **
+        layout.addWidget(self.hello_label)
+        layout.addWidget(self.date_label)
+        layout.addWidget(self.time_label)
+        layout.addStretch(1)
+
+
+        # **Timer für Updates**
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.update_time)
-        self.timer.start(1000)  # Update every 1000 milliseconds (1 second)
+        self.timer.start(1000)  # Jede Sekunde aktualisieren
 
-        self.current_time = QTime.currentTime().toString("hh:mm")
-        self.update()  # Trigger an initial paint event
+        # **Datum initial setzen**
+        self.update_date()
+        self.update_time()
 
-        # Add additional text below the time label (not in paintEvent)
-        self.additional_text_label = QtWidgets.QLabel("This is additional text", self)
-        self.additional_text_label.setAlignment(QtCore.Qt.AlignCenter)
-        self.additional_text_label.setStyleSheet("font: bold 24pt Arial; color: white;")
-        layout.addWidget(self.additional_text_label)
+        self.setLayout(layout)
+
+    def update_date(self):
+        """Aktualisiert das Datum"""
+        self.date_label.setText(QDate.currentDate().toString("dddd, d MMMM yyyy"))
 
     def update_time(self):
-        """Updates the time and triggers repaint"""
-        self.current_time = QTime.currentTime().toString("hh:mm")
-        self.update()  # Force repaint to trigger paintEvent
-
-    def paintEvent(self, event):
-        """Custom paint event to draw text with gradient"""
-        painter = QPainter(self)
-        painter.setRenderHint(QPainter.Antialiasing)
-
-        # Set font properties
-        font = QFont("Arial", 74, QFont.Bold)
-        painter.setFont(font)
-
-        # Get text size and position it in the center
-        text = self.current_time
-        font_metrics = painter.fontMetrics()
-        text_width = font_metrics.horizontalAdvance(text)
-        text_height = font_metrics.height()
-        x = (self.width() - text_width) // 2
-        y = (self.height() + text_height) // 2 - 200
-
-        # Create a path for the text
-        path = QPainterPath()
-        path.addText(x, y, font, text)
-
-        # Set up gradient (match text width)
-        gradient = QLinearGradient(x, 0, x + text_width, 0)
-        gradient.setColorAt(0, QColor("#16635B"))
-        gradient.setColorAt(1, QColor("#113953"))
-
-        # Apply gradient brush
-        brush = QBrush(gradient)
-        painter.setBrush(brush)
-        painter.setPen(QtCore.Qt.PenStyle.NoPen)  # No outline
-
-        # Draw the text
-        painter.drawPath(path)
+        """Aktualisiert die Zeit"""
+        self.time_label.setText(QTime.currentTime().toString("hh:mm"))

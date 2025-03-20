@@ -56,7 +56,7 @@ class Loadingpage(QtWidgets.QWidget):
         self.setLayout(layout)
 
         ##### Timer für den Countdown #####
-        self.remaining_time = 15  # 15 Sekunden Countdown
+        self.remaining_time = 5  # 15 Sekunden Countdown
         self.timer = QtCore.QTimer(self)
         self.timer.timeout.connect(self.update_timer)
         self.timer.start(1000)  # Jede Sekunde aktualisieren
