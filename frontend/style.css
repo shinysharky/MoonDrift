@@ -34,12 +34,18 @@ QPushButton:hover {
     border-color: #FFFFFF;
 }
 
-/*
-QPushButton:checked {
-    background-color: #3e8e41;
-    border-color: #3e8e41;
+QPushButton#footerButton {                                                                                                /*Usage: Footer Buttons */
+    border-color: white;
+     border-radius: 39px;
+    min-width: 75px;
+    min-height: 75px;
+    padding: 0; /* Remove extra spacing */
 }
-*/
+
+QPushButton#footerButton:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(7, 197, 199, 0.8)
+}
 
 /* └─── °∘ Buttons ∘° ───┘ */
 

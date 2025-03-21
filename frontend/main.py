@@ -7,7 +7,7 @@ from PySide6.QtGui import QGuiApplication, QMovie
 from PySide6.QtQml import QQmlApplicationEngine
 from PySide6.QtWidgets import QApplication, QLabel, QVBoxLayout, QPushButton, QMainWindow
 from PySide6.QtCore import Slot
-from frontend.mainpage import Homepage
+
 
 
 class Loadingpage(QtWidgets.QWidget):
@@ -71,6 +71,7 @@ class Loadingpage(QtWidgets.QWidget):
 
     def switch_to_next_page(self):
         """ stopps timer and opens next page """
+        from frontend.mainpage import Homepage
         self.timer.stop()  # Timer stop
         self.next_page = Homepage()  # new page
         self.next_page.show()  # new page open
