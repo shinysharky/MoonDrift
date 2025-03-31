@@ -40,9 +40,9 @@ QPushButton {                                                                   
     border-color: #FFFFFF;
 }
 */
-QPushButton#footerButton {                                                                                                /*Usage: Footer Buttons */
+QPushButton#footerButton {                                                                                               /*Usage: Footer Buttons */
     border-color: transparent;
-     border-radius: 39px;
+    border-radius: 39px;
     min-width: 75px;
     min-height: 75px;
     padding: 0; /* Remove extra spacing */
@@ -110,7 +110,9 @@ QPushButton#footerButton:hover {
     font-weight: normal;
     font-size: 10px;
 }
+/* ┌─── ∘° Frames °∘ ───┐ */
 
+/* └─── °∘ Frames ∘° ───┘ */
 /* ┌─── ∘° Buttons °∘ ───┐ */
 
 /* └─── °∘ Buttons ∘° ───┘ */
@@ -129,7 +131,16 @@ QPushButton#footerButton:hover {
     font-weight: bold;
     font-size: 10px;
 }
+/* ┌─── ∘° Frames °∘ ───┐ */
+#explore_sound_frame{
+    background-color: transparent;
+    border: 2px solid;
+    border-color: #113953;
+    border-radius: 8px;
 
+}
+
+/* └─── °∘ Frames ∘° ───┘ */
 /* ┌─── ∘° Buttons °∘ ───┐ */
 
 /* └─── °∘ Buttons ∘° ───┘ */
@@ -141,7 +152,9 @@ QPushButton#footerButton:hover {
     font-weight: normal;
     font-size: 13px;
 }
+/* ┌─── ∘° Frames °∘ ───┐ */
 
+/* └─── °∘ Frames ∘° ───┘ */
 /* ┌─── ∘° Buttons °∘ ───┐ */
 
 /* └─── °∘ Buttons ∘° ───┘ */
@@ -181,7 +194,9 @@ QPushButton#footerButton:hover {
     font-weight: 400;
     font-size: 16px;
 }
+/* ┌─── ∘° Frames °∘ ───┐ */
 
+/* └─── °∘ Frames ∘° ───┘ */
 /* ┌─── ∘° Buttons °∘ ───┐ */
 
 /* └─── °∘ Buttons ∘° ───┘ */

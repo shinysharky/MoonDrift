@@ -32,8 +32,24 @@ class Explore(QtWidgets.QWidget):
         # Add some space before footer (ensure footer is at the bottom)
         layout.addStretch(1)
 
-        # **Footer**
+        # **Page**
+        sound_nature_frame = QtWidgets.QFrame(self)
+        sound_nature_frame.setGeometry(170, 137, 400, 150)
+        sound_nature_frame.setObjectName('explore_sound_frame')
 
+        sound_animals_frame = QtWidgets.QFrame(self)
+        sound_animals_frame.setGeometry(42, 300, 400, 150)
+        sound_animals_frame.setObjectName('explore_sound_frame')
+
+        sound_asmr_frame = QtWidgets.QFrame(self)
+        sound_asmr_frame.setGeometry(170, 463, 400, 150)
+        sound_asmr_frame.setObjectName('explore_sound_frame')
+
+        sound_weather_frame = QtWidgets.QFrame(self)
+        sound_weather_frame.setGeometry(42, 626, 400, 150)
+        sound_weather_frame.setObjectName('explore_sound_frame')
+
+        # **Footer**
         self.bottom_frame = QtWidgets.QFrame(self)
         self.bottom_frame.setFixedSize(519, 103)  # Fixed size for bottom frame
         # self.bottom_frame.setStyleSheet("background-color: transparent;")
@@ -49,7 +65,6 @@ class Explore(QtWidgets.QWidget):
         self.bottom_frame.setLayout(None)  # No layout manager for the bottom frame
 
         # **Buttons in the footer**
-
         def home_button_click():
             from frontend.mainpage import Homepage
             self.next_page = Homepage()
