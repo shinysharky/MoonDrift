@@ -110,9 +110,9 @@ This section will tell you more about the usage of importent functions and other
 * [x] create style.css
 * [x] create main (main.py)
 * [x] create overview over different styles (overview.py)
-* [x] add placeholder text, buttons, gif to main
-* [ ] animate loading screen
-* [ ] ....
+* [x] animate loading screen
+* [x] functional footer
+* [ ] smooth switches between pages
 
 
 <!-- Contributing -->
