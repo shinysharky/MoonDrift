@@ -78,14 +78,14 @@ Please keep in mind that the code may contain mistakes or inefficiencies. Any fe
 <span>⋅───⊱༺ for a better overview check out style.css ༻⊰───⋅</span>
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Background Color | <img src="assets/color5.PNG" width="20" height="20" /> #092139 |
-| Secondary Color | <img src="assets/color4.PNG" width="20" height="20" /> #113953 |
-| Accent Color | <img src="assets/color3.PNG" width="20" height="20" /> #104040 |
-| Highlight Color | <img src="assets/color2.PNG" width="20" height="20" /> #16635B |
-| Icon Color | <img src="assets/color1.PNG" width="20" height="20" /> #80C4EB |
-| Header Color | <img src="assets/headercolor.PNG" width="20" height="20" /> #69AAF1 |
-| Text Color | <img src="assets/textcolor2.PNG" width="20" height="20" /> #FFFFF |
-| Text Color | <img src="assets/textcolor1.PNG" width="20" height="20" /> #D4D4D4 |
+| Background Color | <img src="assets/colors/color5.PNG" width="20" height="20" /> #092139 |
+| Secondary Color | <img src="assets/colors/color4.PNG" width="20" height="20" /> #113953 |
+| Accent Color | <img src="assets/colors/color3.PNG" width="20" height="20" /> #104040 |
+| Highlight Color | <img src="assets/colors/color2.PNG" width="20" height="20" /> #16635B |
+| Icon Color | <img src="assets/colors/color1.PNG" width="20" height="20" /> #80C4EB |
+| Header Color | <img src="assets/colors/headercolor.PNG" width="20" height="20" /> #69AAF1 |
+| Text Color | <img src="assets/colors/textcolor2.PNG" width="20" height="20" /> #FFFFF |
+| Text Color | <img src="assets/colors/textcolor1.PNG" width="20" height="20" /> #D4D4D4 |
 
 
 
