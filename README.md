@@ -112,7 +112,7 @@ This section will tell you more about the usage of importent functions and other
 * [x] create overview over different styles (overview.py)
 * [x] animate loading screen
 * [x] functional footer
-* [x] smooth switches between pages
+* [ ] smooth switches between pages
 
 
 <!-- Contributing -->
