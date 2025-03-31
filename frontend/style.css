@@ -10,6 +10,12 @@ QWidget {                                                                       
     font-size: 21px;
 }
 
+/*QFooter {
+    background-image: url("C:/Moondrift/assets/footer_explore.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
+
 #moondrift_h1 {                                                                                                         /*Usage: Home, Stats, Explore, Profile*/
     color: #B8D5E5;
     font-family: 'Figtree', sans-serif;
@@ -19,7 +25,7 @@ QWidget {                                                                       
 
 /* ┌─── ∘° Buttons °∘ ───┐ */
 QPushButton {                                                                                                           /*Usage: Default Button Design*/
-    background-color: #092139;
+    background-color: transparent;
     color: #69AAF1;
     border: 2px solid #092139;
     border-radius: 10px;
@@ -29,13 +35,13 @@ QPushButton {                                                                   
     font-weight: bold;
 }
 
-QPushButton:hover {
+/* QPushButton:hover {
     background-color: #FFFFFF;
     border-color: #FFFFFF;
 }
-
+*/
 QPushButton#footerButton {                                                                                                /*Usage: Footer Buttons */
-    border-color: white;
+    border-color: transparent;
      border-radius: 39px;
     min-width: 75px;
     min-height: 75px;
@@ -43,7 +49,7 @@ QPushButton#footerButton {                                                      
 }
 
 QPushButton#footerButton:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
     border: 2px solid rgba(7, 197, 199, 0.8)
 }
 

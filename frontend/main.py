@@ -78,6 +78,7 @@ class Loadingpage(QtWidgets.QWidget):
         self.close()  # close previouse page
 
 
+
 if __name__ == "__main__":
     import sys
 

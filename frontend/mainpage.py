@@ -62,14 +62,23 @@ class Homepage(QtWidgets.QWidget):
         self.timer.start(1000)
 
         # **Footer**
-        self.footerimg_label = QtWidgets.QLabel(self)
-        self.footerimg = QtGui.QPixmap('C:/Moondrift/assets/footer_home.png')
-        self.footerimg_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
-        self.footerimg_label.setPixmap(self.footerimg)
 
-        self.bottom_frame = QtWidgets.QFrame(self.footerimg_label)
-        self.bottom_frame.setFixedSize(519, 103)
-        self.bottom_frame.setStyleSheet("background-color: transparent;")
+        self.bottom_frame = QtWidgets.QFrame(self)
+        self.bottom_frame.setFixedSize(519, 103)  # Fixed size for bottom frame
+        self.bottom_frame.setStyleSheet("""
+                    QFrame {
+                        background-image: url("C:/Moondrift/assets/footer_home.png");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-color: transparent;
+                    }
+                """)
+        self.bottom_frame.setGeometry(46, 869, 520, 120)  # Set exact position like Homepage (position at bottom)
+
+        # Make sure the bottom frame and buttons are fixed by not relying on layouts
+        self.bottom_frame.setLayout(None)  # No layout manager for the bottom frame
+
+        # **Buttons in the footer**
 
         def home_button_click():
             print("switched to Homepage")
@@ -78,67 +87,55 @@ class Homepage(QtWidgets.QWidget):
             from frontend.statistics import Stats
             self.next_page = Stats()
             self.next_page.show()  # Show the Stats page
-            self.close()  # Optionally, close the main window to switch pages
-            print("switched to Statistics")
+            self.close()  # Optionally, close the Stats window to switch pages
+            print("switched to Stats")
 
         def explore_button_click():
             from frontend.explore import Explore
             self.next_page = Explore()
             self.next_page.show()  # Show the Stats page
-            self.close()  # Optionally, close the main window to switch pages
+            self.close()  # Optionally, close the Stats window to switch pages
             print("switched to Explore")
 
         def profile_button_click():
             from frontend.profile import Profile
             self.next_page = Profile()
             self.next_page.show()  # Show the Stats page
-            self.close()  # Optionally, close the main window to switch pages
-            print("switched to Statistics")
+            self.close()  # Optionally, close the Stats window to switch pages
+            print("switched to Profile")
 
+        # Home Button
         home_button = QtWidgets.QPushButton(self.bottom_frame)
         home_button.setAttribute(QtCore.Qt.WidgetAttribute.WA_Hover, True)
-        home_button_radius = QtCore.QSize(75, 79)
-        home_button.setFixedSize(75, 75)  # Ensure width & height are the same
-        home_button.setFixedSize(home_button_radius)
-        home_button.setGeometry(91, 12, 75, 75)
+        home_button.setFixedSize(75, 75)
+        home_button.setGeometry(44, 7, 75, 75)
         home_button.setObjectName("footerButton")
-
         home_button.clicked.connect(home_button_click)
 
+        # Stats Button
         stats_button = QtWidgets.QPushButton(self.bottom_frame)
         stats_button.setAttribute(QtCore.Qt.WidgetAttribute.WA_Hover, True)
-        stats_button_radius = QtCore.QSize(75, 79)
-        stats_button.setFixedSize(75, 75)  # Ensure width & height are the same
-        stats_button.setFixedSize(stats_button_radius)
-        stats_button.setGeometry(203, 12, 75, 75)
+        stats_button.setFixedSize(75, 75)
+        stats_button.setGeometry(156, 7, 75, 75)
         stats_button.setObjectName("footerButton")
-
         stats_button.clicked.connect(stats_button_click)
 
+        # Explore Button
         explore_button = QtWidgets.QPushButton(self.bottom_frame)
         explore_button.setAttribute(QtCore.Qt.WidgetAttribute.WA_Hover, True)
-        explore_button_radius = QtCore.QSize(75, 79)
-        explore_button.setFixedSize(75, 75)  # Ensure width & height are the same
-        explore_button.setFixedSize(explore_button_radius)
-        explore_button.setGeometry(316, 12, 75, 75)
+        explore_button.setFixedSize(75, 75)
+        explore_button.setGeometry(269, 7, 75, 75)
         explore_button.setObjectName("footerButton")
-
         explore_button.clicked.connect(explore_button_click)
 
+        # Profile Button
         profile_button = QtWidgets.QPushButton(self.bottom_frame)
         profile_button.setAttribute(QtCore.Qt.WidgetAttribute.WA_Hover, True)
-        profile_button_radius = QtCore.QSize(75, 79)
-        profile_button.setFixedSize(75, 75)  # Ensure width & height are the same
-        profile_button.setFixedSize(profile_button_radius)
-        profile_button.setGeometry(444, 12, 75, 75)
+        profile_button.setFixedSize(75, 75)
+        profile_button.setGeometry(398, 7, 75, 75)
         profile_button.setObjectName("footerButton")
-
         profile_button.clicked.connect(profile_button_click)
 
-        button_layout = QtWidgets.QHBoxLayout(self.bottom_frame)
-        button_layout.setContentsMargins(1, 1, 1, 1)
-        button_layout.setSpacing(15)  # Space between the buttons
-        layout.addWidget(self.footerimg_label)
 
         # **Initialize Date and Time**
         self.update_date()
