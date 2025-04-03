@@ -37,6 +37,14 @@ class Explore(QtWidgets.QWidget):
         sound_nature_frame.setGeometry(170, 137, 400, 150)
         sound_nature_frame.setObjectName('explore_sound_frame')
 
+        self.nature_label = QtWidgets.QLabel(sound_nature_frame)
+        self.nature_label.setGeometry(0, 0, 150, 150)
+        self.nature_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight)
+
+        pixmap_nature = QtGui.QPixmap("C:\\MoonDrift\\assets\\image 2.png")
+        self.nature_label.setPixmap(pixmap_nature)
+        self.nature_label.setScaledContents(True)
+
         sound_animals_frame = QtWidgets.QFrame(self)
         sound_animals_frame.setGeometry(42, 300, 400, 150)
         sound_animals_frame.setObjectName('explore_sound_frame')
