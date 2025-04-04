@@ -33,29 +33,58 @@ class Explore(QtWidgets.QWidget):
         layout.addStretch(1)
 
         # **Page**
+        #nature
         sound_nature_frame = QtWidgets.QFrame(self)
         sound_nature_frame.setGeometry(170, 137, 400, 150)
         sound_nature_frame.setObjectName('explore_sound_frame')
 
         self.nature_label = QtWidgets.QLabel(sound_nature_frame)
-        self.nature_label.setGeometry(0, 0, 150, 150)
+        self.nature_label.setGeometry(250, 0, 150, 150)
         self.nature_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight)
 
-        pixmap_nature = QtGui.QPixmap("C:\\MoonDrift\\assets\\image 2.png")
+        pixmap_nature = QtGui.QPixmap("C:\\MoonDrift\\assets\\sound_nature.png")
         self.nature_label.setPixmap(pixmap_nature)
         self.nature_label.setScaledContents(True)
 
+        #animals
         sound_animals_frame = QtWidgets.QFrame(self)
         sound_animals_frame.setGeometry(42, 300, 400, 150)
         sound_animals_frame.setObjectName('explore_sound_frame')
 
+        self.animals_label = QtWidgets.QLabel(sound_animals_frame)
+        self.animals_label.setGeometry(0, 0, 150, 150)
+        self.animals_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeft)
+
+        pixmap_animals = QtGui.QPixmap("C:\\MoonDrift\\assets\\sound_animal.png")
+        self.animals_label.setPixmap(pixmap_animals)
+        self.animals_label.setScaledContents(True)
+
+        #asmr
         sound_asmr_frame = QtWidgets.QFrame(self)
         sound_asmr_frame.setGeometry(170, 463, 400, 150)
         sound_asmr_frame.setObjectName('explore_sound_frame')
 
+        self.asmr_label = QtWidgets.QLabel(sound_asmr_frame)
+        self.asmr_label.setGeometry(250, 0, 150, 150)
+        self.asmr_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight)
+
+        pixmap_asmr = QtGui.QPixmap("C:\\MoonDrift\\assets\\sound_asmr.png")
+        self.asmr_label.setPixmap(pixmap_asmr)
+        self.asmr_label.setScaledContents(True)
+
+        #weather
         sound_weather_frame = QtWidgets.QFrame(self)
         sound_weather_frame.setGeometry(42, 626, 400, 150)
         sound_weather_frame.setObjectName('explore_sound_frame')
+
+
+        self.weather_label = QtWidgets.QLabel(sound_weather_frame)
+        self.weather_label.setGeometry(0, 0, 150, 150)
+        self.weather_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeft)
+
+        pixmap_weather = QtGui.QPixmap("C:\\MoonDrift\\assets\\sound_weather.png")
+        self.weather_label.setPixmap(pixmap_weather)
+        self.weather_label.setScaledContents(True)
 
         # **Footer**
         self.bottom_frame = QtWidgets.QFrame(self)
