@@ -17,7 +17,7 @@ class Profile(QtWidgets.QWidget):
         self.setFixedSize(612, 1000)
 
         # Set window icon (ensure the path to the icon is correct)
-        app_icon = QtGui.QIcon(os.path.abspath('C:/Moondrift/assets/Logo/Logo.ico'))
+        app_icon = QtGui.QIcon(os.path.abspath('../assets/Logo/Logo.ico'))
         self.setWindowIcon(app_icon)
 
         # Set up the layout
@@ -38,7 +38,7 @@ class Profile(QtWidgets.QWidget):
         # self.bottom_frame.setStyleSheet("background-color: transparent;")
         self.bottom_frame.setStyleSheet("""
                     QFrame {
-                        background-image: url("C:/Moondrift/assets/footer_profile.png");
+                        background-image: url("../assets/footer_profile.png");
                         background-repeat: no-repeat;
                         background-position: center;
                         background-color: transparent;

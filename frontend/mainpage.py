@@ -13,7 +13,7 @@ class Homepage(QtWidgets.QWidget):
         super().__init__()
         self.setWindowTitle("Moondrift")
         self.setGeometry(0, 0, 612, 1000)
-        app_icon = QtGui.QIcon(os.path.abspath('C:/Moondrift/assets/Logo/Logo.ico'))
+        app_icon = QtGui.QIcon(os.path.abspath('../assets/Logo/Logo.ico'))
         self.setWindowIcon(app_icon)
 
         # Main layout (Vertical)

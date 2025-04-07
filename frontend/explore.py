@@ -17,7 +17,7 @@ class Explore(QtWidgets.QWidget):
         self.setFixedSize(612, 1000)
 
         # Set window icon (ensure the path to the icon is correct)
-        app_icon = QtGui.QIcon(os.path.abspath('C:/Moondrift/assets/Logo/Logo.ico'))
+        app_icon = QtGui.QIcon(os.path.abspath('../assets/Logo/Logo.ico'))
         self.setWindowIcon(app_icon)
 
         # Set up the layout
@@ -42,7 +42,7 @@ class Explore(QtWidgets.QWidget):
         self.nature_label.setGeometry(250, 0, 150, 150)
         self.nature_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight)
 
-        pixmap_nature = QtGui.QPixmap("C:\\MoonDrift\\assets\\sound_nature.png")
+        pixmap_nature = QtGui.QPixmap("..\\assets\\explore\\sound_nature.png")
         self.nature_label.setPixmap(pixmap_nature)
         self.nature_label.setScaledContents(True)
 
@@ -55,7 +55,7 @@ class Explore(QtWidgets.QWidget):
         self.animals_label.setGeometry(0, 0, 150, 150)
         self.animals_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeft)
 
-        pixmap_animals = QtGui.QPixmap("C:\\MoonDrift\\assets\\sound_animal.png")
+        pixmap_animals = QtGui.QPixmap("..\\assets\\explore\\sound_animal.png")
         self.animals_label.setPixmap(pixmap_animals)
         self.animals_label.setScaledContents(True)
 
@@ -68,7 +68,7 @@ class Explore(QtWidgets.QWidget):
         self.asmr_label.setGeometry(250, 0, 150, 150)
         self.asmr_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight)
 
-        pixmap_asmr = QtGui.QPixmap("C:\\MoonDrift\\assets\\sound_asmr.png")
+        pixmap_asmr = QtGui.QPixmap("..\\assets\\explore\\sound_asmr.png")
         self.asmr_label.setPixmap(pixmap_asmr)
         self.asmr_label.setScaledContents(True)
 
@@ -82,7 +82,7 @@ class Explore(QtWidgets.QWidget):
         self.weather_label.setGeometry(0, 0, 150, 150)
         self.weather_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeft)
 
-        pixmap_weather = QtGui.QPixmap("C:\\MoonDrift\\assets\\sound_weather.png")
+        pixmap_weather = QtGui.QPixmap("..\\assets\\explore\\sound_weather.png")
         self.weather_label.setPixmap(pixmap_weather)
         self.weather_label.setScaledContents(True)
 
@@ -92,7 +92,7 @@ class Explore(QtWidgets.QWidget):
         # self.bottom_frame.setStyleSheet("background-color: transparent;")
         self.bottom_frame.setStyleSheet("""
             QFrame {
-                background-image: url("C:/Moondrift/assets/footer_explore.png");
+                background-image: url("../assets/footer_explore.png");
                 background-repeat: no-repeat;
                 background-position: center;
                 background-color: transparent;

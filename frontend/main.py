@@ -16,7 +16,7 @@ class Loadingpage(QtWidgets.QWidget):
 
         self.setWindowTitle("Moondrift")
         self.setGeometry(0, 0, 612, 1000)
-        app_icon = QtGui.QIcon(os.path.abspath('C:/Moondrift/assets/Logo/Logo.ico'))
+        app_icon = QtGui.QIcon(os.path.abspath('../assets/Logo/Logo.ico'))
         self.setWindowIcon(app_icon)
         layout = QtWidgets.QVBoxLayout()
 
@@ -33,14 +33,14 @@ class Loadingpage(QtWidgets.QWidget):
         self.giflabel.setAlignment(QtCore.Qt.AlignCenter)
 
         # Integrate QMovie to the label and initiate the GIF
-        self.gif = QMovie('C:/Moondrift/assets/Logo/Videoprojekt.gif')
+        self.gif = QMovie('../assets/Logo/Videoprojekt.gif')
         self.giflabel.setMovie(self.gif)
         self.gif.start()
         layout.addWidget(self.giflabel)
 
         ##### LOGO #####
         self.imagelabel = QtWidgets.QLabel(self)
-        self.logoname = QtGui.QPixmap('C:/Moondrift/assets/Logo/Group 5 (2).png')
+        self.logoname = QtGui.QPixmap('../assets/Logo/Group 5 (2).png')
         self.imagelabel.setPixmap(self.logoname)
         self.imagelabel.setAlignment(QtCore.Qt.AlignCenter)
         layout.addWidget(self.imagelabel)
