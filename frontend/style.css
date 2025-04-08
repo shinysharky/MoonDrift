@@ -154,7 +154,17 @@ QPushButton#footerButton:hover {
 
 /* └─── °∘ Frames ∘° ───┘ */
 /* ┌─── ∘° Buttons °∘ ───┐ */
-
+#yes_no_button {                                                                                                           /*Usage: Default Button Design*/
+    background-color: transparent;
+    color: #B8D5E5;
+    border: 2px solid #0F4149;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    /*min-width: 20px;
+    min-height: 20px;*/
+}
 /* └─── °∘ Buttons ∘° ───┘ */
 
 /* ༺═────────────═༻ Settings ༺═────────────═༻ */

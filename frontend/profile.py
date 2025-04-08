@@ -6,6 +6,9 @@ from PySide6.QtWidgets import QWidget, QApplication, QLabel, QVBoxLayout, QPushB
 from PySide6.QtCore import Slot, QTimer, QTime, QDate, QRect
 import os
 
+from frontend.personalitytest import personalitytest_popup
+
+
 class Profile(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
@@ -15,7 +18,6 @@ class Profile(QtWidgets.QWidget):
 
         # Set window geometry (x, y, width, height)
         self.setFixedSize(612, 1000)
-
         # Set window icon (ensure the path to the icon is correct)
         app_icon = QtGui.QIcon(os.path.abspath('../assets/Logo/Logo.ico'))
         self.setWindowIcon(app_icon)
@@ -31,6 +33,24 @@ class Profile(QtWidgets.QWidget):
 
         # Add some space before footer (ensure footer is at the bottom)
         layout.addStretch(1)
+
+        # **Page**
+        self.placeholer_frame = QtWidgets.QFrame(self)
+        self.placeholer_frame.setFixedSize(500,500)
+        self.placeholer_frame.setGeometry(100, 100, 500, 500)
+
+        def personality_button_click():
+            from frontend.personalitytest import personalitytest_popup
+            self.next_page = personalitytest_popup()  # instantiate the QWidget subclass
+            self.next_page.show()  # show the popup window
+            print("popup shown")
+
+
+        personality_button = QtWidgets.QPushButton("start test", self.placeholer_frame)
+        personality_button.setFixedSize(500, 500)
+        personality_button.setGeometry(0, 0, 500, 500)
+        personality_button.setObjectName("QPushButton")
+        personality_button.clicked.connect(personality_button_click)
 
         # **Footer**
         self.bottom_frame = QtWidgets.QFrame(self)

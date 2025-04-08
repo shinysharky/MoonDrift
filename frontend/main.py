@@ -18,6 +18,8 @@ class Loadingpage(QtWidgets.QWidget):
         self.setGeometry(0, 0, 612, 1000)
         app_icon = QtGui.QIcon(os.path.abspath('../assets/Logo/Logo.ico'))
         self.setWindowIcon(app_icon)
+        #self.setStyleSheet("background-color: #092139;")
+
         layout = QtWidgets.QVBoxLayout()
 
         # Disable fullscreen and resizing

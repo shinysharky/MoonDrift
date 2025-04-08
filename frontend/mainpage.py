@@ -16,6 +16,7 @@ class Homepage(QtWidgets.QWidget):
         app_icon = QtGui.QIcon(os.path.abspath('../assets/Logo/Logo.ico'))
         self.setWindowIcon(app_icon)
 
+
         # Main layout (Vertical)
         layout = QtWidgets.QVBoxLayout(self)
         layout.setContentsMargins(0, 0, 0, 0)

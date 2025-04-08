@@ -9,7 +9,6 @@ class text_overview(QtWidgets.QWidget):
 
         self.setWindowTitle("Moondrift")
         self.setGeometry(0, 0, 412, 917)
-        self.setStyleSheet("background-color: #092139;")
         app_icon = QtGui.QIcon(os.path.abspath('../assets/Logo/Logo.ico'))
         self.setWindowIcon(app_icon)
         layout = QtWidgets.QVBoxLayout()
