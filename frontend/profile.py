@@ -23,21 +23,29 @@ class Profile(QtWidgets.QWidget):
         self.setWindowIcon(app_icon)
 
         # Set up the layout
-        layout = QtWidgets.QVBoxLayout()
+        main_layout = QtWidgets.QVBoxLayout(self)
+        self.setLayout(main_layout)
 
-        # **Label for Stats Page**
+        # **Label for Profile Page**
         label = QtWidgets.QLabel("Welcome to Profile!")
         label.setObjectName("moondrift_h1")
-        label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)  # Center align text
-        layout.addWidget(label)
+        label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        main_layout.addWidget(label, alignment=QtCore.Qt.AlignCenter)  # ← Add directly to main_layout
 
-        # Add some space before footer (ensure footer is at the bottom)
-        layout.addStretch(1)
+        main_layout.addStretch(1)
 
         # **Page**
         self.placeholer_frame = QtWidgets.QFrame(self)
-        self.placeholer_frame.setFixedSize(500,500)
-        self.placeholer_frame.setGeometry(100, 100, 500, 500)
+        self.placeholer_frame.setFixedSize(500, 500)
+        self.placeholer_frame.setStyleSheet(
+            "background-color: transparent;"
+            "border: 0px;"
+            "border-radius: 0px;"
+        )
+
+        # Add the frame to the layout and center it
+        main_layout.addWidget(self.placeholer_frame, alignment=QtCore.Qt.AlignCenter)
+
 
         def personality_button_click():
             from frontend.personalitytest import personalitytest_popup
@@ -51,6 +59,8 @@ class Profile(QtWidgets.QWidget):
         personality_button.setGeometry(0, 0, 500, 500)
         personality_button.setObjectName("QPushButton")
         personality_button.clicked.connect(personality_button_click)
+
+        main_layout.addStretch(2)
 
         # **Footer**
         self.bottom_frame = QtWidgets.QFrame(self)
@@ -128,4 +138,4 @@ class Profile(QtWidgets.QWidget):
         profile_button.clicked.connect(profile_button_click)
 
         # Set the layout to this widget
-        self.setLayout(layout)
+        self.setLayout(main_layout)

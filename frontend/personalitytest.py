@@ -17,6 +17,7 @@ class personalitytest_popup(QWidget):
 
         # Persönlichkeitstypen-Score
         self.scores = {
+            "Autism": 0,
             "Worker": 0,
             "Visionary": 0,
             "Dreamer": 0,
@@ -157,6 +158,7 @@ class personalitytest_popup(QWidget):
         best_match = max(self.scores, key=self.scores.get)
 
         descriptions = {
+            "Autism": "A҉u҉t҉i҉s҉m҉\n‿̩͙⊱༒︎༻♱༺༒︎⊰‿̩\nunknown perosnality...maybe autism?",
             "Worker": "Ｔｈｅ Ｗｏｒｋｅｒ\n‿̩͙⊱༒︎༻♱༺༒︎⊰‿̩\nWorkers are dedicated and dependable, always striving to meet their goals. They take pride in their effort and believe in the value of discipline and persistence. Practical and focused, they prioritize results and consistency. Workers support change only when it improves efficiency.",
             "Visionary": "𝙏𝙝𝙚 𝙑𝙞𝙨𝙞𝙤𝙣𝙖𝙧𝙮\n‿̩͙⊱༒︎༻♱༺༒︎⊰‿̩\nVisionaries are driven by big ideas and future possibilities. They inspire those around them with their creativity and ambition. They are imaginative and open-minded, always seeking growth and innovation. Visionaries embrace change and take risks, believing in the power of bold dreams.",
             "Dreamer": "𝘛𝘩𝘦 𝘋𝘳𝘦𝘢𝘮𝘦𝘳\n‿̩͙⊱༒︎༻♱༺༒︎⊰‿̩\nDreamers are guided by their inner world and endless imagination. They see beauty and potential everywhere and believe in following their passions. They are idealistic and hopeful, often prioritizing their dreams over practical concerns. Dreamers value creativity and emotional depth.",
