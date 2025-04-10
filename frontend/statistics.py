@@ -33,7 +33,10 @@ class Stats(QtWidgets.QWidget):
         # Add some space before footer (ensure footer is at the bottom)
         layout.addStretch(1)
 
-        # **Footer**
+    #**Page**✦•······················•✦•······················•✦
+        #nothing yet lol
+
+    # **Footer**✦•······················•✦•······················•✦
         self.bottom_frame = QtWidgets.QFrame(self)
         self.bottom_frame.setFixedSize(519, 103)  # Fixed size for bottom frame
         self.bottom_frame.setStyleSheet("""
@@ -50,7 +53,6 @@ class Stats(QtWidgets.QWidget):
         self.bottom_frame.setLayout(None)  # No layout manager for the bottom frame
 
         # **Buttons in the footer**
-
         def home_button_click():
             from frontend.mainpage import Homepage
             self.next_page = Homepage()

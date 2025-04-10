@@ -9,7 +9,6 @@ from PySide6.QtWidgets import QApplication, QLabel, QVBoxLayout, QPushButton, QM
 from PySide6.QtCore import Slot
 
 
-
 class Loadingpage(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
@@ -28,7 +27,7 @@ class Loadingpage(QtWidgets.QWidget):
         layout.setContentsMargins(0, 0, 0, 0)
         layout.addStretch(1)
 
-        ##### GIF #####
+        ##### GIF ✦•······················•✦•······················•✦
         self.giflabel = QtWidgets.QLabel(self)
         self.giflabel.setMinimumSize(QtCore.QSize(500, 500))
         self.giflabel.setMaximumSize(QtCore.QSize(1000, 1000))
@@ -40,7 +39,7 @@ class Loadingpage(QtWidgets.QWidget):
         self.gif.start()
         layout.addWidget(self.giflabel)
 
-        ##### LOGO #####
+        ##### LOGO ✦•······················•✦•······················•✦
         self.imagelabel = QtWidgets.QLabel(self)
         self.logoname = QtGui.QPixmap('../assets/Logo/Group 5 (2).png')
         self.imagelabel.setPixmap(self.logoname)
@@ -49,7 +48,7 @@ class Loadingpage(QtWidgets.QWidget):
 
         layout.addStretch(1)
 
-        ##### Timer Label (Countdown) #####
+        ##### Timer Label (Countdown) ✦•······················•✦•······················•✦
         self.timer_label = QtWidgets.QLabel("Loading...5 seconds", self)
         self.timer_label.setObjectName("settings_fillout_text")
         self.timer_label.setAlignment(QtCore.Qt.AlignCenter)
@@ -63,6 +62,7 @@ class Loadingpage(QtWidgets.QWidget):
         self.timer.timeout.connect(self.update_timer)
         self.timer.start(1000)
 
+    ###function timer update ✦•······················•✦•······················•✦
     def update_timer(self):
         """ Aktualisiert das Timer-Label jede Sekunde """
         if self.remaining_time > 0:
@@ -71,6 +71,7 @@ class Loadingpage(QtWidgets.QWidget):
         else:
             self.switch_to_next_page()
 
+    ###function switch page ✦•······················•✦•······················•✦
     def switch_to_next_page(self):
         """ stopps timer and opens next page """
         from frontend.mainpage import Homepage
@@ -80,7 +81,7 @@ class Loadingpage(QtWidgets.QWidget):
         self.close()  # close previouse page
 
 
-
+###run method ✦•······················•✦•······················•✦
 if __name__ == "__main__":
     import sys
 

@@ -15,7 +15,7 @@ class personalitytest_popup(QWidget):
         self.layout = QVBoxLayout()
         self.setLayout(self.layout)
 
-        # Persönlichkeitstypen-Score
+    # score✦•······················•✦•······················•✦
         self.scores = {
             "Autism": 0,
             "Worker": 0,
@@ -26,7 +26,7 @@ class personalitytest_popup(QWidget):
             "Sleeper": 0
         }
 
-        ## Questions in German
+    ## Questions in German✦•······················•✦•······················•✦
         # self.questions = [
         #     "Ich verfolge klare Ziele und arbeite konsequent darauf hin.",
         #     "Ich denke oft über die Zukunft und neue Ideen nach.",
@@ -50,29 +50,30 @@ class personalitytest_popup(QWidget):
         #     "Ich tue mir schwer mit Veränderungen, selbst wenn ich weiß, dass sie gut wären."
         # ]
 
+    ###questions in english✦•······················•✦•······················•✦
         self.questions = [
-            "I pursue clear goals and work consistently towards them.",
-            "I often think about the future and new ideas",
-            "I tend to get lost in my own imagination.",
-            "I openly express my feelings and speak about them",
-            "I prefer sticking to proven methods rather than trying new things",
-            "I regularly sleep longer than I should",
-            "I believe hard work is more important than talent.",
-            "I have taken a risk just because it felt right.",
-            "I place great value on order and structure in my daily life.",
-            "I trust my gut feeling more than hard facts.",
-            "I am sensitive to others' feelings, even when I am not in the mood myself.",
-            "I believe that a dream can be important even without a connection to reality.",
-            "I enjoy motivating and inspiring others.",
-            "I think change should only happen when it's really necessary.",
-            "I would describe myself as empathetic.",
-            "I become restless when I haven't done anything productive for a while.",
-            "I enjoy spending time alone with my thoughts.",
-            "I often procrastinate and prefer taking a nap instead.",
-            "I am constantly looking for new projects or challenges.",
-            "I find it hard to deal with changes, even when I know they would be beneficial."
+            "I pursue clear goals and work consistently towards them.", #worker
+            "I often think about the future and new ideas", #visionary
+            "I tend to get lost in my own imagination.", #dreamer
+            "I openly express my feelings and speak about them", #lover
+            "I prefer sticking to proven methods rather than trying new things", #realist
+            "I regularly sleep longer than I should", #sleeper
+            "I believe hard work is more important than talent.", #worker
+            "I have taken a risk just because it felt right.", #visionary,dreamer
+            "I place great value on order and structure in my daily life.", #worker,realist
+            "I trust my gut feeling more than hard facts.", #dreamer,lover
+            "I am sensitive to others' feelings, even when I am not in the mood myself.", #lover
+            "I believe that a dream can be important even without a connection to reality.", #dreamer
+            "I enjoy motivating and inspiring others.", #visionary
+            "I think change should only happen when it's really necessary.", #realist
+            "I would describe myself as empathetic.", #lover
+            "I become restless when I haven't done anything productive for a while.", #worker
+            "I enjoy spending time alone with my thoughts.", #dreamer,realist
+            "I often procrastinate and prefer taking a nap instead.", #sleeper
+            "I am constantly looking for new projects or challenges.", #visionary
+            "I find it hard to deal with changes, even when I know they would be beneficial." #realist,sleeper
         ]
-        # Personality for each Question
+    # Personality for each Question✦•······················•✦•······················•✦
         self.question_types = [
             ["Worker"],
             ["Visionary"],
@@ -96,9 +97,10 @@ class personalitytest_popup(QWidget):
             ["Realist", "Sleeper"]
         ]
 
+        #count before answering
         self.current_question = 0
 
-        # GUI-Elemente
+    # GUI-elements✦•······················•✦•······················•✦
         self.question_label = QLabel(self.questions[self.current_question])
         self.question_label.setWordWrap(True)
         self.question_label.setAlignment(QtCore.Qt.AlignCenter)
@@ -124,6 +126,7 @@ class personalitytest_popup(QWidget):
         # Add the button layout to the main layout
         self.layout.addLayout(button_layout)
 
+#function for yes and no✦•······················•✦•······················•✦
     def answer_yes(self):
         types = self.question_types[self.current_question]
         for t in types:
@@ -133,6 +136,7 @@ class personalitytest_popup(QWidget):
     def answer_no(self):
         self.next_question()
 
+#function that displays next question✦•······················•✦•······················•✦
     def next_question(self):
         self.current_question += 1
         if self.current_question < len(self.questions):
@@ -140,6 +144,7 @@ class personalitytest_popup(QWidget):
         else:
             self.show_result()
 
+#function to restart quiz(sets everything to zero)✦•······················•✦•······················•✦
     def restart_quiz(self):
         # sets back score
         for key in self.scores:
@@ -154,6 +159,7 @@ class personalitytest_popup(QWidget):
         self.no_button.setVisible(True)
         self.restart_button.setVisible(False)
 
+#function to show results✦•······················•✦•······················•✦
     def show_result(self):
         best_match = max(self.scores, key=self.scores.get)
 
@@ -169,17 +175,20 @@ class personalitytest_popup(QWidget):
 
         result = descriptions.get(best_match, "unknown perosnality...maybe autism?")
 
+    #enable yes and no button on result screen✦•······················•✦•······················•✦
         self.question_label.setText(result)
         self.yes_button.setDisabled(True)
         self.no_button.setDisabled(True)
         self.yes_button.setVisible(False)
         self.no_button.setVisible(False)
 
+    #restart button gui✦•······················•✦•······················•✦
         self.restart_button = QPushButton("do quiz again?")
         self.restart_button.clicked.connect(self.restart_quiz)
         self.restart_button.setVisible(False)
         self.layout.addWidget(self.restart_button)
-
         self.restart_button.setVisible(True)
+
+    #prints score (debugging)✦•······················•✦•······················•✦
         print(self.scores)
 

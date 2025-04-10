@@ -1,5 +1,6 @@
 import sys
 from PySide6 import QtCore, QtWidgets, QtGui
+#from PyQt6.QtCore import Qt
 from PySide6.QtGui import QGuiApplication, QMovie, QPainter, QLinearGradient, QColor, QFont, QBrush, QPainterPath
 from PySide6.QtQml import QQmlApplicationEngine
 from PySide6.QtWidgets import QWidget, QApplication, QLabel, QVBoxLayout, QPushButton, QMainWindow
@@ -32,11 +33,15 @@ class Explore(QtWidgets.QWidget):
         # Add some space before footer (ensure footer is at the bottom)
         layout.addStretch(1)
 
-        # **Page**
-        #nature
+# **Page**✦•······················•✦•······················•✦
+    #nature✦•······················•✦•······················•✦
         sound_nature_frame = QtWidgets.QFrame(self)
         sound_nature_frame.setGeometry(170, 137, 400, 150)
         sound_nature_frame.setObjectName('explore_sound_frame')
+
+        self.nature_song_label = QtWidgets.QLabel("Nature", sound_nature_frame)
+        self.nature_song_label.setGeometry(15, 5, 100, 50)
+        self.nature_song_label.setObjectName('explore_sound_h1')
 
         self.nature_label = QtWidgets.QLabel(sound_nature_frame)
         self.nature_label.setGeometry(250, 0, 150, 150)
@@ -46,10 +51,15 @@ class Explore(QtWidgets.QWidget):
         self.nature_label.setPixmap(pixmap_nature)
         self.nature_label.setScaledContents(True)
 
-        #animals
+    #animals✦•······················•✦•······················•✦
         sound_animals_frame = QtWidgets.QFrame(self)
         sound_animals_frame.setGeometry(42, 300, 400, 150)
         sound_animals_frame.setObjectName('explore_sound_frame')
+
+        self.animals_song_label = QtWidgets.QLabel("Animals", sound_animals_frame)
+        self.animals_song_label.setGeometry(280, 5, 100, 50)
+        self.animals_song_label.setStyleSheet(f"qproperty-alignment: {int(QtCore.Qt.AlignRight)};")
+        self.animals_song_label.setObjectName('explore_sound_h1')
 
         self.animals_label = QtWidgets.QLabel(sound_animals_frame)
         self.animals_label.setGeometry(0, 0, 150, 150)
@@ -59,10 +69,14 @@ class Explore(QtWidgets.QWidget):
         self.animals_label.setPixmap(pixmap_animals)
         self.animals_label.setScaledContents(True)
 
-        #asmr
+    #asmr✦•······················•✦•······················•✦
         sound_asmr_frame = QtWidgets.QFrame(self)
         sound_asmr_frame.setGeometry(170, 463, 400, 150)
         sound_asmr_frame.setObjectName('explore_sound_frame')
+
+        self.asmr_song_label = QtWidgets.QLabel("ASMR", sound_asmr_frame)
+        self.asmr_song_label.setGeometry(15, 5, 100, 50)
+        self.asmr_song_label.setObjectName('explore_sound_h1')
 
         self.asmr_label = QtWidgets.QLabel(sound_asmr_frame)
         self.asmr_label.setGeometry(250, 0, 150, 150)
@@ -72,11 +86,15 @@ class Explore(QtWidgets.QWidget):
         self.asmr_label.setPixmap(pixmap_asmr)
         self.asmr_label.setScaledContents(True)
 
-        #weather
+    #weather✦•······················•✦•······················•✦
         sound_weather_frame = QtWidgets.QFrame(self)
         sound_weather_frame.setGeometry(42, 626, 400, 150)
         sound_weather_frame.setObjectName('explore_sound_frame')
 
+        self.weather_song_label = QtWidgets.QLabel("Weather", sound_weather_frame)
+        self.weather_song_label.setGeometry(280, 5, 100, 50)
+        self.weather_song_label.setStyleSheet(f"qproperty-alignment: {int(QtCore.Qt.AlignRight)};")
+        self.weather_song_label.setObjectName('explore_sound_h1')
 
         self.weather_label = QtWidgets.QLabel(sound_weather_frame)
         self.weather_label.setGeometry(0, 0, 150, 150)
@@ -86,10 +104,9 @@ class Explore(QtWidgets.QWidget):
         self.weather_label.setPixmap(pixmap_weather)
         self.weather_label.setScaledContents(True)
 
-        # **Footer**
+    # **Footer**✦•······················•✦•······················•✦
         self.bottom_frame = QtWidgets.QFrame(self)
         self.bottom_frame.setFixedSize(519, 103)  # Fixed size for bottom frame
-        # self.bottom_frame.setStyleSheet("background-color: transparent;")
         self.bottom_frame.setStyleSheet("""
             QFrame {
                 background-image: url("../assets/footer_explore.png");

@@ -8,6 +8,7 @@ from PySide6.QtCore import Slot, QTimer, QTime, QDate, QRect
 import os
 
 
+#•······················•✦•······················•✦
 class Homepage(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
@@ -44,26 +45,25 @@ class Homepage(QtWidgets.QWidget):
         self.time_label.setFont(QFont("Arial", 74, QFont.Bold))
         self.time_label.setStyleSheet("color: #16635B;")
 
-        # **DATE LABEL**
+    # **DATE LABEL**✦•······················•✦•······················•✦
         self.date_label = QtWidgets.QLabel(self)
         self.date_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.date_label.setObjectName("moondrift_h1")
 
-        # **Labels Layout**
+    # **Labels Layout**✦•······················•✦•······················•✦
         layout.addLayout(hbox)
         layout.addSpacing(10)
         layout.addWidget(self.date_label)
         layout.addWidget(self.time_label)
         layout.addStretch(1)
 
-        # **Timer for Updates**
+    # **Timer for Updates**✦•······················•✦•······················•✦
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.update_time)
         self.timer.timeout.connect(self.update_text)
         self.timer.start(1000)
 
-        # **Footer**
-
+    # **Footer**✦•······················•✦•······················•✦
         self.bottom_frame = QtWidgets.QFrame(self)
         self.bottom_frame.setFixedSize(519, 103)  # Fixed size for bottom frame
         self.bottom_frame.setStyleSheet("""
@@ -79,8 +79,7 @@ class Homepage(QtWidgets.QWidget):
         # Make sure the bottom frame and buttons are fixed by not relying on layouts
         self.bottom_frame.setLayout(None)  # No layout manager for the bottom frame
 
-        # **Buttons in the footer**
-
+    # **Buttons in the footer**✦•······················•✦•······················•✦
         def home_button_click():
             print("switched to Homepage")
 
@@ -145,6 +144,7 @@ class Homepage(QtWidgets.QWidget):
 
         self.setLayout(layout)
 
+###function to display greeting based on time✦•······················•✦•······················•✦
     def update_text(self):
         """Update text based on the current time."""
         current_time = QTime.currentTime()
@@ -161,6 +161,7 @@ class Homepage(QtWidgets.QWidget):
         else:
             self.hello_label.setText("Good night!")
 
+###function to update time and date based on local time/date✦•······················•✦•······················•✦
     def update_date(self):
         """Update the date label."""
         self.date_label.setText(QDate.currentDate().toString("dddd, d MMMM yyyy"))

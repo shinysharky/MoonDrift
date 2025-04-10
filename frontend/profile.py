@@ -34,7 +34,7 @@ class Profile(QtWidgets.QWidget):
 
         main_layout.addStretch(1)
 
-        # **Page**
+    # **Page**✦•······················•✦•······················•✦
         self.placeholer_frame = QtWidgets.QFrame(self)
         self.placeholer_frame.setFixedSize(500, 500)
         self.placeholer_frame.setStyleSheet(
@@ -46,7 +46,7 @@ class Profile(QtWidgets.QWidget):
         # Add the frame to the layout and center it
         main_layout.addWidget(self.placeholer_frame, alignment=QtCore.Qt.AlignCenter)
 
-
+    ###function to open personality test✦•······················•✦•······················•✦
         def personality_button_click():
             from frontend.personalitytest import personalitytest_popup
             self.next_page = personalitytest_popup()  # instantiate the QWidget subclass
@@ -62,7 +62,7 @@ class Profile(QtWidgets.QWidget):
 
         main_layout.addStretch(2)
 
-        # **Footer**
+    # **Footer**✦•······················•✦•······················•✦
         self.bottom_frame = QtWidgets.QFrame(self)
         self.bottom_frame.setFixedSize(519, 103)  # Fixed size for bottom frame
         # self.bottom_frame.setStyleSheet("background-color: transparent;")

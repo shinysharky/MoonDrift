@@ -118,11 +118,18 @@ QPushButton#footerButton:hover {
 /* └─── °∘ Buttons ∘° ───┘ */
 
 /* ༺═────────────═༻ Explore ༺═────────────═༻ */
+#explore_sound_h1 {                                                                                                   /*Usage: Text for Soundname*/
+    color: #B8D5E5;
+    font-family: 'Figtree', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
 #explore_sound_text {                                                                                                   /*Usage: Text for Soundname*/
     color: #FFFFFF;
     font-family: 'Figtree', sans-serif;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 23px;
 }
 
 #explore_artist_text {                                                                                                  /*Usage: Text for Artistname*/
